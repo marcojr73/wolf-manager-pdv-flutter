@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(primary: ColorsUtils.primaryColor, secondary: ColorsUtils.secondary),
-        textTheme: Theme.of(context).textTheme.apply(),
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        fontFamily: "Montserrat"
       ),
       routes: {
-        NamedRoutes.auth: (context) => const AuthPage()
+        NamedRoutes.auth: (context) => AuthPage()
       },
     );
   }
